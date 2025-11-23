@@ -63,3 +63,6 @@ cdk.out/
 # Any notebook or HTML whose name ends with _solution
 
 *_solution.html
+
+#Adding Data files to gitignore to prevent overload 
+Data/household_power_consumption.txt

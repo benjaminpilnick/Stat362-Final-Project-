@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "stat362"
+name = "STAT3620_Final_Project"
 version = "0.1.0"
 description = ""
 package-mode = false

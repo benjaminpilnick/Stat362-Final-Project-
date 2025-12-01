@@ -67,4 +67,7 @@ cdk.out/
 #Adding Data files to gitignore to prevent overload 
 Data/household_power_consumption.txt
 
-.DS_Store
+**/.DS_Store
+
+
+

@@ -29,9 +29,12 @@ For our baseline model, we utilized a LSTM model that uses the previous 24 hours
 # Summary of key results
 Across all models, we evaluated forecasting performance using RMSE and achieved the following results:
 ![Results Table](Results_Table.png)
+
 Out of the 3 models, the LSTM with a single 100-unit later and 0.3 dropout achieved the lowest test RMSE of 0.458, slightly outperforming both the RNN and GRU architectures.
 ![LSTM Visualization](LSTM_Visualizations/First400Sample_LSTM_Best.png)
+
 Based on this graph of true vs. predicted energy consumption for the first 400 hourly test samples, we see that model is able to accurately catch the overall pattern and timing of peaks, with some extreme spikes being underestimated. 
+
 ![LSTM Visualization](LSTM_Visualizations/LSTM_Validation_Curve_best.png)
 Additionally, the training and validation loss curves for the LSTM model both decrease steadily as the epochs increase, suggesting stable learning and generalization to unseen data.
 

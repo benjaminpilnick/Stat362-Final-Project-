@@ -36,6 +36,7 @@ Out of the 3 models, the LSTM with a single 100-unit later and 0.3 dropout achie
 Based on this graph of true vs. predicted energy consumption for the first 400 hourly test samples, we see that model is able to accurately catch the overall pattern and timing of peaks, with some extreme spikes being underestimated. 
 
 ![LSTM Visualization](LSTM_Visualizations/LSTM_Validation_Curve_best.png)
+
 Additionally, the training and validation loss curves for the LSTM model both decrease steadily as the epochs increase, suggesting stable learning and generalization to unseen data.
 
 # How to run the code

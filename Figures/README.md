@@ -23,7 +23,7 @@ For our baseline model, we utilized a LSTM model that uses the previous 24 hours
 Train RMSE: 0.608
 Validation RMSE: 0.516
 Test RMSE: 0.551
-![Baseline curve](Training:Validation.png)
+![Baseline curve](Training_Validation.png)
 
 
 # Summary of key results

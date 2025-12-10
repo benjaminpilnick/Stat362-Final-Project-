@@ -20,10 +20,10 @@ This project includes both baseline models and deep learning architectures. Befo
 - Constructed 3D model inputs
 
 For our baseline model, we utilized a LSTM model that uses the previous 24 hours of energy consumption data to forecast the next hour (one-step-ahead; t+1). We then evaluated the model by generating predictions for every hour in the test set using rolling sliding-window approach (t+1). From this, we received the following results:
-Train RMSE: 0.608
-Validation RMSE: 0.516
-Test RMSE: 0.551
-![Baseline curve](Training_Validation.png)
+- Train RMSE: 0.608
+- Validation RMSE: 0.516
+- Test RMSE: 0.551
+
 
 
 # Summary of key results

@@ -58,7 +58,7 @@ Additionally, the training and validation loss curves for the LSTM model both de
 # How to run the code
 Below are the basic steps to run the final LSTM model used in our analysis. These steps assume you have cloned the repository and are executing commands from the project’s root directory.
 1. Download the [dataset](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption) from the UCI Machine Learning Repository and place the file in a folder named Data/:
-`data/household_power_consumption.txt`
+`Data/household_power_consumption.txt`
 2. Preprocess the data
 - Open the preprocessing: `notebook/Preprocessing/preprocess_data.ipynb`
 - Run all cells in the notebook to clean, resample, and prepare the dataset for modeling. This will generate the processed hourly dataset called `df_hour`.

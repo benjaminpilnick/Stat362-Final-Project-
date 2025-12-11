@@ -56,5 +56,9 @@ Based on this graph of true vs. predicted energy consumption for the first 400 h
 Additionally, the training and validation loss curves for the LSTM model both decrease steadily as the epochs increase, suggesting stable learning and generalization to unseen data.
 
 # How to run the code
-Basic commands to run one or two representative experiments or demos
+Below are the basic steps to run the LSTM final model used in our analysis. These steps assume you have cloned the repository and are executing commands from the project’s root directory.
+1. Download the [dataset](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption) from the UCI Machine Learning Repository and place the file in a folder named Data/:
+'data/household_power_consumption.txt'
+3. Preprocess the data
+Navigate to the 
 

@@ -24,7 +24,22 @@ For our baseline model, we utilized a LSTM model that uses the previous 24 hours
 - Validation RMSE: 0.516
 - Test RMSE: 0.551
 
-
+Next, we expanded beyond the baseline and compared three deep learning architectures under the same preprocessing pipeline. All models use a 24-hour sliding window to predict the next hour of electricity usage and share the same training configuration (Adam optimizer, learning rate 0.001, batch size 32, and early stopping):
+1. LSTM 
+   - Architecture: 1 hidden layer (100 units) + output layer
+   - Regularization: Dropout 0.3
+   - Training: 20 epochs with early stopping
+   - Rationale: The dataset’s temporal patterns were not complex enough to require deeper LSTM stacks, so a single-layer LSTM provided sufficient capacity while avoiding overfitting.
+2. RNN 
+   - Architecture: 2 hidden layers (64 → 32 units) + output layer
+   - Regularization: Dropout 0.2
+   - Training: 27 epochs with early stopping
+   - Rationale: A smaller dropout rate stabilized training while still allowing the model to learn meaningful temporal structure within the sequence data.
+3. GRU
+   - Architecture: 2 hidden layers (64 → 32 units) + output layer
+   - Regularization: None
+   - Training: 40 epochs with early stopping
+   - Rationale: Stacking GRU layers enabled the model to capture temporal patterns across multiple time scales.
 
 # Summary of key results
 Across all models, we evaluated forecasting performance using RMSE and achieved the following results:

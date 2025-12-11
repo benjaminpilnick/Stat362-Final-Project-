@@ -60,8 +60,8 @@ Below are the basic steps to run the final LSTM model used in our analysis. Thes
 1. Download the [dataset](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption) from the UCI Machine Learning Repository and place the file in a folder named Data/:
 `Data/household_power_consumption.txt`
 2. Preprocess the data
-- Open the preprocessing: `notebook/Preprocessing/preprocess_data.ipynb`
-- Run all cells in the notebook to clean, resample, and prepare the dataset for modeling. This will generate the processed hourly dataset called `df_hour`.
+- Open the preprocessing notebook: `notebook/Preprocessing/preprocess_data.ipynb`
+- Run all cells in the notebook to clean, resample, and prepare the dataset for modeling. This will generate the processed hourly dataset called `df_hour.csv`.
 3. Run the LSTM model
 - Open the LSTM model notebook: `notebook/LSTM/LSTM_Model_Manipulation.ipynb`
 - Run all cells to train the LSTM, generate predictions, and create visualizations.

@@ -1,5 +1,6 @@
 # Energy Consumption Prediction Analysis
 Stat 362 - Fall 2025
+
 Team Members: Celena Kim, Sarah Kim, Benjamin Pilnick, Emily Yoo
 
 

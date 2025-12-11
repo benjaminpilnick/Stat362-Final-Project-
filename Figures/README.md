@@ -56,9 +56,15 @@ Based on this graph of true vs. predicted energy consumption for the first 400 h
 Additionally, the training and validation loss curves for the LSTM model both decrease steadily as the epochs increase, suggesting stable learning and generalization to unseen data.
 
 # How to run the code
-Below are the basic steps to run the LSTM final model used in our analysis. These steps assume you have cloned the repository and are executing commands from the project’s root directory.
+Below are the basic steps to run the final LSTM model used in our analysis. These steps assume you have cloned the repository and are executing commands from the project’s root directory.
 1. Download the [dataset](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption) from the UCI Machine Learning Repository and place the file in a folder named Data/:
 `data/household_power_consumption.txt`
-3. Preprocess the data
-Navigate to the 
+2. Preprocess the data
+- Open the preprocessing: `notebook/Preprocessing/preprocess_data.ipynb`
+- Run all cells in the notebook to clean, resample, and prepare the dataset for modeling. This will generate the processed hourly dataset called `df_hour`.
+3. Run the LSTM model
+- Open the LSTM model notebook: `notebook/LSTM/LSTM_Model_Manipulation.ipynb`
+- Run all cells to train the LSTM, generate predictions, and create visualizations.
 
+# Presentation Link
+[Energy Consumption Prediction Analysis Slides](https://www.canva.com/design/DAG6hPjKX2U/FACFCCfIW2Sh56-KEeqBRA/edit?utm_content=DAG6hPjKX2U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
